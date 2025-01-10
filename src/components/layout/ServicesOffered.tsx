@@ -1,4 +1,3 @@
-// components/ServicesOffered.tsx
 import React from "react";
 
 const services = [
@@ -71,7 +70,7 @@ const ServicesOffered: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-md ${
+              className={`p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
                 service.isHighlighted
                   ? "bg-blue-900 text-white"
                   : "bg-white dark:bg-gray-700"

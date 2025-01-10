@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -20,7 +19,7 @@ const Footer: React.FC = () => {
           <p>
             <strong>Contact:</strong> +91-80972 62227 <br />
             <strong>Email:</strong>{" "}
-            <a href="mailto:contact@taxroof.in" className="text-blue-400">
+            <a href="mailto:contact@taxroof.in" className="text-blue-400 hover:text-blue-600">
               contact@taxroof.in
             </a>
           </p>
@@ -46,8 +45,8 @@ const Footer: React.FC = () => {
             title="Taxroof Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.376260103662!2d75.61716727456645!3d15.41400928926878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8db2e18f4af67%3A0x9d75b6a393fb1188!2sKEB%20Office%2C%20Mulgund%20Naka%20Rd%2C%20Gadag-Betageri%2C%20Karnataka%20582101!5e0!3m2!1sen!2sin!4v1689332030403!5m2!1sen!2sin"
             width="100%"
-            height="200"
-            style={{ border: 0 }}
+            height="100%"
+            style={{ border: 0, aspectRatio: '1 / 1' }}
             loading="lazy"
             className="rounded-lg"
             allowFullScreen
