@@ -45,6 +45,21 @@ const services = [
     description:
       "Unique Waves Consultancy Private Limited Raison Fincap Private Limited.",
   },
+  {
+    title: "Business Consulting",
+    description:
+      "Expert business consulting services to help you grow and succeed.",
+  },
+  {
+    title: "Financial Planning",
+    description:
+      "Comprehensive financial planning services to secure your future.",
+  },
+  {
+    title: "Tax Advisory",
+    description:
+      "Professional tax advisory services to optimize your tax strategy.",
+  },
 ];
 
 const ServicesOffered: React.FC = () => {

@@ -33,6 +33,22 @@ const Navbar: React.FC = () => {
           />
         </div>
 
+        {/* Navigation Links */}
+        <div className="flex space-x-4">
+          <a href="#home" className="text-white hover:text-blue-400">
+            Home
+          </a>
+          <a href="#about" className="text-white hover:text-blue-400">
+            About
+          </a>
+          <a href="#services" className="text-white hover:text-blue-400">
+            Services
+          </a>
+          <a href="#contact" className="text-white hover:text-blue-400">
+            Contact
+          </a>
+        </div>
+
         {/* Theme Toggle Button */}
         <button
           onClick={toggleTheme}

@@ -29,3 +29,41 @@ body {
   color: #1e90ff;
   transition: color 0.3s ease-in-out;
 }
+
+/* Custom styles for buttons */
+.button {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded;
+}
+
+.button:hover {
+  @apply bg-blue-600;
+}
+
+/* Custom styles for headings */
+.heading {
+  @apply text-2xl font-bold text-gray-800 dark:text-gray-200;
+}
+
+/* Custom styles for text */
+.text {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Dark mode support for new elements */
+@media (prefers-color-scheme: dark) {
+  .button {
+    @apply bg-gray-700 text-gray-200;
+  }
+
+  .button:hover {
+    @apply bg-gray-600;
+  }
+
+  .heading {
+    @apply text-gray-200;
+  }
+
+  .text {
+    @apply text-gray-400;
+  }
+}

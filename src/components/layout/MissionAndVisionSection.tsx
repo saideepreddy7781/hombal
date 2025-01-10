@@ -1,4 +1,3 @@
-// components/MissionAndVisionSection.tsx
 import Image from "next/image";
 
 const MissionAndVisionSection: React.FC = () => {
@@ -17,6 +16,16 @@ const MissionAndVisionSection: React.FC = () => {
       title: "Building Trust",
       description:
         "Fostering long-term partnerships with a client-first approach.",
+    },
+    {
+      title: "Sustainability",
+      description:
+        "Promoting sustainable practices in all our operations.",
+    },
+    {
+      title: "Innovation",
+      description:
+        "Continuously innovating to provide the best solutions for our clients.",
     },
   ];
 
@@ -41,7 +50,7 @@ const MissionAndVisionSection: React.FC = () => {
           </h2>
           <ul className="space-y-4">
             {visionPoints.map((point, index) => (
-              <li key={index} className="flex gap-4">
+              <li key={index} className="flex gap-4 hover:scale-105 transition-transform">
                 <span className="text-green-500 text-2xl">➔</span>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
