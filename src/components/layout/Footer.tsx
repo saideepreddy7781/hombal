@@ -36,6 +36,12 @@ const Footer: React.FC = () => {
             <a href="https://twitter.com" className="hover:text-blue-400">
               Twitter
             </a>
+            <a href="https://youtube.com" className="hover:text-red-500">
+              YouTube
+            </a>
+            <a href="https://pinterest.com" className="hover:text-red-400">
+              Pinterest
+            </a>
           </p>
         </div>
 

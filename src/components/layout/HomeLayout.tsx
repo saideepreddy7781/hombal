@@ -1,4 +1,3 @@
-// components/layout/HomeLayout.tsx
 import Image from "next/image";
 
 const HomeLayout: React.FC = () => {
@@ -31,6 +30,21 @@ const HomeLayout: React.FC = () => {
             height={400}
             className="rounded-lg"
           />
+        </div>
+      </div>
+
+      {/* New Section with Call-to-Action Button */}
+      <div className="bg-gray-100 dark:bg-gray-700 py-12 transition-colors duration-300">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
+            Ready to Get Started?
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mt-4">
+            Join us today and take the first step towards maximizing your tax savings.
+          </p>
+          <button className="button mt-6 hover:bg-blue-600 transition">
+            Get Started Now
+          </button>
         </div>
       </div>
     </div>

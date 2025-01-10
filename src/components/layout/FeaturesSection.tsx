@@ -1,5 +1,4 @@
-// components/FeaturesSection.tsx
-import { FaShieldAlt, FaChartLine, FaUserTie } from "react-icons/fa";
+import { FaShieldAlt, FaChartLine, FaUserTie, FaRegSmile, FaRegLightbulb, FaRegHandshake } from "react-icons/fa";
 
 const FeaturesSection: React.FC = () => {
   const features = [
@@ -21,6 +20,24 @@ const FeaturesSection: React.FC = () => {
       description:
         "Get personalized, expert-assisted tax solutions tailored to your unique financial needs with TAXROOF.",
     },
+    {
+      icon: <FaRegSmile className="text-blue-500 text-3xl" />,
+      title: "Customer Satisfaction",
+      description:
+        "We prioritize customer satisfaction by providing exceptional service and support.",
+    },
+    {
+      icon: <FaRegLightbulb className="text-blue-500 text-3xl" />,
+      title: "Innovative Solutions",
+      description:
+        "Our innovative solutions are designed to meet the evolving needs of our clients.",
+    },
+    {
+      icon: <FaRegHandshake className="text-blue-500 text-3xl" />,
+      title: "Trusted Partnerships",
+      description:
+        "We build trusted partnerships with our clients to ensure long-term success.",
+    },
   ];
 
   return (
@@ -29,7 +46,7 @@ const FeaturesSection: React.FC = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6"
+            className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 hover:scale-105 transition-transform"
           >
             <div className="mb-4">{feature.icon}</div>
             <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
